@@ -20,6 +20,7 @@ This repository contains a **TO DO LIST** application developed during my web de
 
 ## Installation
 
+
 To get a local copy up and running, follow these steps:
 
 1. **Clone the repository:**
@@ -75,3 +76,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 A special thanks to CODTECH Solutions for the opportunity to work on this project and for their guidance throughout my internship.
 
+![Screenshot 2024-09-05 201128](https://github.com/user-attachments/assets/ba3a8989-944c-4dea-8aab-9e1a7a0461de)
