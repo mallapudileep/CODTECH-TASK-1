@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Pro | Next-Gen Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="notepad-container">
+        <div class="hologram-line"></div>
+        
+        <header>
+            <div class="header-inner">
+                <div class="brand">
+                    <span class="status-dot"></span>
+                    <h1>AURA <span>PRO</span></h1>
+                </div>
+                <button id="toggleView" onclick="toggleWindow()">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </button>
+            </div>
+        </header>
+
+        <div class="window-wrapper">
+            <div class="window-slider" id="windowSlider">
+                
+                <section class="window">
+                    <div class="content-box">
+                        <label class="nexus-label">Objective Title</label>
+                        <input type="text" id="taskTitle" placeholder="Initialize data..." autocomplete="off">
+                        
+                        <label class="nexus-label">Detailed Parameters</label>
+                        <textarea id="taskDesc" placeholder="Log technical specifications..."></textarea>
+                        
+                        <div class="grid-row">
+                            <div class="field">
+                                <label class="nexus-label">Timestamp</label>
+                                <input type="date" id="reminderDate" class="aura-input">
+                            </div>
+                            <div class="field">
+                                <label class="nexus-label">Sync Cycle</label>
+                                <input type="time" id="reminderTime" class="aura-input">
+                            </div>
+                        </div>
+
+                        <button onclick="handleTaskAction()" id="actionBtn" class="prime-btn">
+                            <span class="btn-text">DEPLOY DATA</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="window">
+                    <div class="list-container">
+                        <div class="list-head">
+                            <h2>Central Archives</h2>
+                            <span id="noteCount">0 ACTIVE</span>
+                        </div>
+                        <ul id="taskList"></ul>
+                    </div>
+                    <button class="fab-aura" onclick="toggleWindow()">
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
